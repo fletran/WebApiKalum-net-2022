@@ -45,6 +45,19 @@ namespace WebApiKalum.Controllers
             Logger.LogInformation("Finalizando el proceso de busqueda de forma exitosa");
             return Ok(alumno);
         }
+
+        // [HttpPost]
+        //public async Task<ActionResult<Alumno>> Post([FromBody] Alumno value)
+       // {
+       //     Logger.LogDebug("Iniciando el proceso de agregar un Alumno nuevo");
+       //     value.Carne = Guid.NewGuid().ToString().ToUpper();
+       //     await DbContext.Alumno.AddAsync(value);
+       //     await DbContext.SaveChangesAsync();
+       //     Logger.LogInformation("Finalizando el proceso de agregar un Alumno");
+       //     return new CreatedAtRouteResult("GetAlumno", new { id = value.Carne }, value);
+       // }
+        
+        
         
 
     }
